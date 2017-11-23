@@ -117,30 +117,17 @@
   ],
   "posts": [
     {
-      "slug": "my-first-awesome-post",
-      "title": "My First Post which is Awesome",
+      "slug": "faster-more-secure-personal-website",
+      "title": "A faster, more secure personal website",
       "meta": {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+        "description": "Why and how I migrated my personal website to a headless CMS"
       },
-      "date": "110829853",
+      "date": "1511453206",
       "thumbnail": "glenn-carstens-peters-203007.jpg",
       "categories": [
         "code"
       ],
-      "content": "Lorem ipsum dolor sit amet, _consectetur_ adipisicing elit. Velit error est ipsam repellat **dolores quisquam expedita** perspiciatis dolorum suscipit cupiditate.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Velit error est ipsam repellat dolores quisquam expedita perspiciatis dolorum suscipit cupiditate.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Velit error est ipsam repellat dolores quisquam expedita perspiciatis dolorum suscipit cupiditate."
-    },
-    {
-      "slug": "my-second-post",
-      "title": "My Second Post",
-      "meta": {
-        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-      },
-      "date": "1510829953",
-      "thumbnail": "glenn-carstens-peters-203007.jpg",
-      "categories": [
-        "code"
-      ],
-      "content": "<p>Lorem ipsum dolor sit amet, <em>consectetur</em> adipisicing elit. Velit error est ipsam repellat <strong>dolores quisquam expedita</strong> perspiciatis dolorum suscipit cupiditate.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit error est ipsam repellat dolores quisquam expedita perspiciatis dolorum suscipit cupiditate.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit error est ipsam repellat dolores quisquam expedita perspiciatis dolorum suscipit cupiditate.</p>"
+      "content": "## How we got here\n\nSince 2014 I have been hosting my work on Behance, an excellent self-promoting network for creative professionals, which allowed me to manage my portfolio through their platform, and then fetch it through their API with simple wrappers on a PHP server, to dynamically assemble my personal website.\n\nThis was all well and good, but I always had to work around the limitations and constraints that came from working with someone else's management system. I also started to realize that I would have enjoyed having more features, such as a blog.\n\n## Why not just use WordPress and cache it?\n\nWhen brainstorming for possible solutions for a content-driven website, WordPress came immediately to mind, as I have some experience working with custom themes and types. But then I wondered: do I *really* need a full fledged CMS, with user privileges, templates, and countless customizable settings? Do I *really* want another MySQL database and credentials to worry about, for something so small as personal site? Of course WordPress can be a fast and secure solution when needed, but is it the right solution for me?\n\nI really did not want to go back to stitch together pieces of HTML to manually build a static files like I did 10 years ago, and a simple static site generator, such as Jekyll, was not a well-integrated enough solution for what I had in mind, as I needed a visual way to organize my content.\n\n## What I did\n\nNot happy with any of the existing solutions, I decided to build my own: a **headless content management system** to author and handle my content, coupled with a **static site generator**, to build a small, fast, highly cacheable, vastly more secure website, that could be hosted basically anywhere, very cheaply (*or even for free*).\n\nThis allows me to **move most of the performance bottlenecks and security concerns away from the live server, and into my local machine**. Neat!\nResource intense and sensitive database operations are only performed every once in a while on my computer (*for example, when I add new work on the portfolio, or a new blog post*), while the server only delivers ready-made static HTML files.\n\n## The headless CMS\n\nI developed a **node.js** application to serve as a dashboard and management system for my content. I used **express** to build the necessary routes, and **pug** to generate the backend interface. The content is managed with CRUD operations via **lowdb**, and stored in a simple **.json** file, as I don't need the complexity or security of a full database system. Since I now that – *at least for now* – only I will be using the CMS in a controlled environment (*up-to-date browser and system*), I was able to use the latest and greatest when it comes to JavaScript and CSS. **ES6** and **CSS-grids** for the win!\n\n## The static site generator\n\nSince the content is agnostically (*is that a word?*) saved in a standard .json file in Markup language, it is highly compatible with modern tools, and can easily be parse by the site generator. I again use **lowdb** to read the content, and feed it to **gulp**, which is in charge of compiling the frontend **pug** templates into HTML, the **Sass** files into autoprefixed CSS, ES6 code into more compatible scripts, and compressing the images. The result is a static, minified website that can be hosted on virtually any web server, even for free on GitHub pages.\n\n## The result\n\nAdd some CDN on top for speed and caching, and the final result is what you see here. A **faster, stronger website**, that performs much better than any dynamic solution I previously had, is much safer against malicious activities or outdated code, and costs a fraction to host. Furthermore, I can manage it with a custom dashboard, so adding new content is a breeze, and when I inevitably decide to change its look, I will only need to adjust the frontend side of my templates.\n\nBut most importantly, in the process I learned a ton about server-side JavaScript and node applications, as well as some important design and optimization techniques."
     }
   ]
 }
