@@ -1,0 +1,146 @@
+{
+  "site": {
+    "name": "Riccardo Zaffalon"
+  },
+  "work": [
+    {
+      "order": 5,
+      "slug": "alder-wordpress-theme",
+      "title": "Alder",
+      "description": "A clean, fast and focused responsive portfolio website for photographers and artists, developed from scratch as a WordPress theme.",
+      "client": "",
+      "url": "",
+      "thumbnail": "alder-cover.png",
+      "fields": "Web Design, Web Development",
+      "content": "## Home Page\n![Alder Home](/images/work/alder-home.png)\n\n## Project Page\n![Alder Project](/images/work/alder-project.png)\n\n## About Page\n![Alder About](/images/work/alder-about.png)\n\n## Contact Page\n![Alder Contact](/images/work/alder-contact.png)\n\nBuilt with Sass, Toast and _s."
+    },
+    {
+      "order": 6,
+      "slug": "minimus-wordpress-theme",
+      "title": "minimus",
+      "description": "A free minimalist WordPress template for writers.",
+      "client": "",
+      "url": "https://github.com/RiccardoZaffalon/minimus",
+      "thumbnail": "minimus-cover.png",
+      "fields": "Web Design, Web Development",
+      "content": "![](/images/work/minimus-preview.jpg)\n\nBased on _s and skeleton\n\n## Home Page\n\n![minimus Home](/images/work/minimus-home.png)\n\n## Single Chapter\n\n![minimus Chapter](/images/work/minimus-post.png)"
+    },
+    {
+      "order": 7,
+      "slug": "johnnys-barber-shop",
+      "title": "Johnny's Barber Shop",
+      "description": "A full height, single page, simple and elegant website for a barber shop, with inner sections spanning across half of the window width.",
+      "client": "",
+      "url": "http://riccardozaffalon.github.io/johnnys-barber-shop/",
+      "thumbnail": "johnny-cover.png",
+      "fields": "Web Design, Web Development",
+      "content": "## Mockup Preview\n\n![Johnny's Mockup](/images/work/johnny-preview.jpg)\n\n## Single Page Design\n\n![Johnny's Page](/images/work/johnny-home.png)"
+    },
+    {
+      "order": 4,
+      "slug": "shows-react",
+      "title": "Shows",
+      "description": "A React based Single Page Application to find out if your favourite TV show is still running, without spoilers.",
+      "client": "",
+      "url": "https://riccardozaffalon.com/tv-shows/",
+      "thumbnail": "shows-cover.png",
+      "fields": "Web Design, Web Development",
+      "content": "![Shows Preview](/images/work/shows-mockup.jpg)\n\n## About the project\n\nIf you are anything like me, you hate spoilers as much as you love TV shows. Sometimes you may want to know whether a series is returning or it has ended, or how many seasons it has. But you know that if you are going to search for that on the web, you could run into other information that you don't want or need.So I built a small application that solves that.\n\n![Shows Stack](/images/work/shows-stack.png)\n\nI knew I wanted a single page application that could feel quick and minimalistic, so I built it using React and React Router. I wrote much of the code with ES6 syntax, JSX components and Sass, using Babel and Webpack to compile and build it.\n\n![Shows Code](/images/work/shows-code.jpg)\n\n## Home and Search page\n\n![Shows Home](/images/work/shows-home.jpg)\n\n## Show detail page\n\n![Show Detail](/images/work/shows-show.jpg)\n\nSee? No spoilers!"
+    },
+    {
+      "order": 3,
+      "slug": "youtube-searcher",
+      "title": "Youtube Searcher",
+      "description": "A JS weekend project.",
+      "client": "",
+      "url": "https://riccardozaffalon.github.io/youtube-custom-search/",
+      "thumbnail": "youtube-cover.png",
+      "fields": "Web Development",
+      "content": "![Youtube Home](/images/work/youtube-home.png)\n\n## Why\nWhen I browse a new Youtube channel, I often go straight to the most popular videos they released until then, to find their **best content**. The problem is that *Youtube displays all the most viewed videos since the channel was created*, and that is not always relevant or ideal for me. I want to be able to **filter their content more finely**, for example to only see the **most popular videos released in the past month**, or year.\n\n## What\nSo on a rainy Sunday afternoon, I went through Youtube API's documentantion, quickly prototyped, and built a small application – optimized for the desktop experience – to do exactly that. Now I can search for a Youtube channel's name or description, grab its ID, apply **query and date filters**, and search for the most popular content that I am interested in.\n\n![Youtube Channel](/images/work/youtube-channel.png)\n\n## How\nTo optimize *speed of development and performance*, I built the application using modern JavaScript techniques, such as **Promises**, **fetch**, and **ES6** syntax.\n\nI utilized **moment.js** to manipulate time and date information, and **Handlebars** to build semantic templates and render the search results; everything else is **Vanilla JS**.\n\nThe CSS was written in **Sass** and compiled with **Gulp**.\n\n![Youtube Code](/images/work/youtube-code.png)\n\nAs this is an open source project, you can read or download the code on the [GitHub repository](https://github.com/RiccardoZaffalon/youtube-custom-search).\n"
+    },
+    {
+      "order": 1,
+      "slug": "ui-components",
+      "title": "UI Components",
+      "description": "Collection of UI exercises, challenges, and components.",
+      "client": "",
+      "url": "",
+      "thumbnail": "ui-cover.png",
+      "fields": "UI Design, Web Design",
+      "content": "## Sign Up Form\n\n![UI Signup](/images/work/ui-signup.png)\n\n## Compact Credit Card Checkout\n\n![UI Checkout](/images/work/ui-checkout.jpg)\n\n## Landing Page (Above The Fold)\n\n![UI Landing](/images/work/ui-landing.png)\n\n## Calculator\n\n![UI Calculator](/images/work/ui-calculator.png)\n\nMore coming."
+    },
+    {
+      "order": 0,
+      "slug": "benmedia",
+      "title": "BENMEDIA",
+      "description": "Website Design and Development for BENMEDIA.",
+      "client": "BENMEDIA, Ottawa, ON (Canada)",
+      "url": "https://benmedia.ca/",
+      "thumbnail": "benmedia-cover.png",
+      "fields": "UI/UX Consultancy, Website Design, Website Development",
+      "content": "## The Project\n\nBENMEDIA, a modern ad agency based in Ottawa, ON, needed a new website to showcase their values, present their services and generate connections.\n\n![BENMEDIA Mockup](/images/work/ben-mockup.png)\n\n## The Solution: Design and Development\n\nAfter aquiring the relevant information about the firm, their unique selling points and purpose, a styleguide was drafted – alongside a Balsamiq wireframe – to determine the feel and layout of the pages, and to ensure a consistence look across the website. All the pages were then individually designed in Sketch both in a desktop and a mobile context, and all the interactive elements prototyped.\n\nTo provide ease of content editing and data entry for the client, the website was then developed as a responsive custom WordPress solution, leveraging the flexibility of custom post types, taxonomies and fields, while keeping in mind search engine friendliness and performance.\n\n> “Riccardo did a fantastic job, I look forward to working with him in the future.”\n> \n> Tyler Benoit — Chief Creative Officer & President at BENMEDIA\n\n## Home Page\n\n![BENMEDIA Home](/images/work/ben-home.png)\n\n## Services Page\n\n![BENMEDIA Services](/images/work/ben-services.png)"
+    },
+    {
+      "order": 2,
+      "slug": "winnett-design",
+      "title": "winnett.ca",
+      "description": "In order to improve the user's experience and generate valuable leads, Winnett Design's portfolio at winnett.ca was reimagined in early 2017 by Art Director and Designer Peter Winnett.",
+      "client": "Winnett Design, Vancouver, BC (Canada)",
+      "url": "http://www.winnett.ca/",
+      "thumbnail": "winnett-cover.png",
+      "fields": "Web Development, Web Consultancy",
+      "content": "![Winnett Design Home](/images/work/winnett-home.png)\n\nWebsite designed by Peter Winnett. From the website:\n> \"Peter Winnett is an Art Director & Designer with a Bachelor's in Communication Design from NSCAD University and over 15 years experience working on brands of all sizes. He works from his studio in Yaletown, Vancouver with a talented associates developing powerful creative solutions using bold creative, branding & design.\"\n\n![Winnett Design Code](/images/work/winnett-code.jpg)\n\nOnce the design phase was completed, I had the opportunity to help the transition to the new layout by developing the website's static, responsive, search engine friendly frontend. Modularity was ketp in mind to allow the author to manage and replicate the HTML content easily.\n\nAnalytics are now showing a lower bounce rate and improved conversions compared to the previous version of the site."
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Marco Bellotto",
+      "title": "Project Manager at Webtechnet",
+      "profile": "marco-bellotto.jpg",
+      "link": "//www.linkedin.com/in/marcobellotto/",
+      "feedback": "Riccardo is a very talented web developer with great design skills. He is extremely flexible and reliable. He often researches for alternative solutions and is always up to date. We worked on very interesting projects together. I'm still missing Riccardo."
+    },
+    {
+      "name": "Danny Aw",
+      "title": "Travel Blogger and Founder at AWAH",
+      "profile": "danny-aw.jpg",
+      "link": "//www.linkedin.com/in/danny-aw-444004a0",
+      "feedback": "Riccardo's attention to details is just amazing. He met deadlines while ensuring the quality of his work was not compromised. I can safely say he is reliable and pleasant to work with."
+    },
+    {
+      "name": "Tyler Benoit",
+      "title": "CCO & President at BENMEDIA",
+      "profile": "tyler-benoit.jpg",
+      "link": "//www.linkedin.com/in/tylerbenoitca/",
+      "feedback": "Riccardo did a fantastic job, I look forward to working with him in the future."
+    }
+  ],
+  "posts": [
+    {
+      "slug": "my-first-awesome-post",
+      "title": "My First Post which is Awesome",
+      "meta": {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      },
+      "date": "110829853",
+      "thumbnail": "glenn-carstens-peters-203007.jpg",
+      "categories": [
+        "code"
+      ],
+      "content": "Lorem ipsum dolor sit amet, _consectetur_ adipisicing elit. Velit error est ipsam repellat **dolores quisquam expedita** perspiciatis dolorum suscipit cupiditate.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Velit error est ipsam repellat dolores quisquam expedita perspiciatis dolorum suscipit cupiditate.\n\nLorem ipsum dolor sit amet, consectetur adipisicing elit. Velit error est ipsam repellat dolores quisquam expedita perspiciatis dolorum suscipit cupiditate."
+    },
+    {
+      "slug": "my-second-post",
+      "title": "My Second Post",
+      "meta": {
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+      },
+      "date": "1510829953",
+      "thumbnail": "glenn-carstens-peters-203007.jpg",
+      "categories": [
+        "code"
+      ],
+      "content": "<p>Lorem ipsum dolor sit amet, <em>consectetur</em> adipisicing elit. Velit error est ipsam repellat <strong>dolores quisquam expedita</strong> perspiciatis dolorum suscipit cupiditate.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit error est ipsam repellat dolores quisquam expedita perspiciatis dolorum suscipit cupiditate.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit error est ipsam repellat dolores quisquam expedita perspiciatis dolorum suscipit cupiditate.</p>"
+    }
+  ]
+}
