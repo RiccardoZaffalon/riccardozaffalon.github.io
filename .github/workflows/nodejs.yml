@@ -12,11 +12,10 @@ jobs:
         node-version: [10.x]
 
     steps:
-    - name: Build and Deploy
-      uses: JamesIves/github-pages-deploy-action@master
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.0
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: 'build'
-        BUILD_SCRIPT: npm run-script build
+        ACTIONS_DEPLOY_KEY: ${{ secrets.GH_PAT }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./public
         CI: true
