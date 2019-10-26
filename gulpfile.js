@@ -6,24 +6,24 @@ const htmlmin = require('gulp-htmlmin');
 
 function serve () {
     browserSync.init({
-        server: "./"
+        server: "./build"
     });
 
     watch("./src/*.html", html);
     watch("./src/scss/*.scss", style);
     watch("./src/js/*.js", scripts);
-    watch("./dist/*.html").on('change', browserSync.reload);
+    watch("./build/*.html").on('change', browserSync.reload);
 }
 function html () {
     return src('./src/*.html')
         .pipe(htmlmin({ collapseWhitespace: true, minifyJS: true }))
-        .pipe(dest('./'));
+        .pipe(dest('./build'));
 }
 
 function style () {
     return src("./src/scss/*.scss")
         .pipe(sass({outputStyle: 'compressed', includePaths: ['./node_modules/aos/src/sass']}))
-        .pipe(dest("./dist/css"))
+        .pipe(dest("./build/css"))
         .pipe(browserSync.stream());
 }
 
@@ -35,7 +35,7 @@ function scripts () {
             },
             mode: 'production'
         }))
-        .pipe(dest("./dist/js"))
+        .pipe(dest("./build/js"))
         .pipe(browserSync.stream());
 }
 
