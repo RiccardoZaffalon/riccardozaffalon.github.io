@@ -31,3 +31,4 @@ $RECYCLE.BIN/
 robots.txt
 CNAME
 node_modules
+.DS_Store
