@@ -30,3 +30,4 @@ $RECYCLE.BIN/
 # Hosting
 robots.txt
 CNAME
+node_modules
