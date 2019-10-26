@@ -27,8 +27,6 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# Hosting
-CNAME
 node_modules
 .DS_Store
 
