@@ -1,0 +1,34 @@
+a {
+    &.button {
+        display: inline-block;
+        background-color: $background;
+        border: 2px solid $accent;
+        text-decoration: none;
+        padding: 0.8rem 1.6rem;
+        border-radius: 0.4rem;
+        font-size: 1.6rem;
+        transition: all 0.15s ease;
+        margin-right: 0.8rem;
+        box-shadow: 0.1rem 0.2rem 4rem change-color($text, $alpha: 0.1);
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: $accent;
+            color: $background;            
+            text-decoration: none;
+        }
+
+        &-primary {
+            background-color: $accent;
+            color: $background;
+
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: $background;
+                color: $accent;
+            }
+        }
+    }
+}

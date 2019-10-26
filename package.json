@@ -19,6 +19,11 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.0.2",
+    "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }

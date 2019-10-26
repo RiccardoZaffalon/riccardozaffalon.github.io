@@ -1,0 +1,15 @@
+$background: #070201;
+$text: #e6e5e5;
+$accent: #50e2b9;
+
+$background: #e6e5e5;
+$text: #070201;
+$accent: #e44232;
+
+@import 'reset';
+@import 'aos';
+
+@import 'mixins';
+@import 'layout';
+@import 'typo';
+@import 'button';
