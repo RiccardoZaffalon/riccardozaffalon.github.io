@@ -4,6 +4,8 @@
   "description": "[View the site](https://riccardozaffalon.com)",
   "main": "index.js",
   "scripts": {
+    "start": "./node_modules/.bin/gulp",
+    "build": "./node_modules/.bin/gulp build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
