@@ -31,3 +31,8 @@ $RECYCLE.BIN/
 CNAME
 node_modules
 .DS_Store
+
+# Compiled
+index.html
+dist
+dist/**/*
