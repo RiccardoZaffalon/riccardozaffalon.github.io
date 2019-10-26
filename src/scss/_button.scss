@@ -14,21 +14,15 @@ a {
         &:hover,
         &:active,
         &:focus {
-            background-color: $accent;
-            color: $background;            
+            background-color: scale-color($accent, $lightness: 15%);
+            border-color: scale-color($accent, $lightness: 15%);
+            color: $background;
             text-decoration: none;
         }
 
         &-primary {
             background-color: $accent;
             color: $background;
-
-            &:hover,
-            &:active,
-            &:focus {
-                background-color: $background;
-                color: $accent;
-            }
         }
     }
 }

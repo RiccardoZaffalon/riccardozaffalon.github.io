@@ -1,4 +1,4 @@
-const { src, dest, watch } = require('gulp');
+const { src, dest, watch, parallel } = require('gulp');
 const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass');
 const webpack = require('webpack-stream');
@@ -42,4 +42,5 @@ function scripts () {
 exports.html = html;
 exports.style = style;
 exports.scripts = scripts;
+exports.build = parallel(html, style, scripts);
 exports.default = serve;
