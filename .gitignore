@@ -29,7 +29,11 @@ $RECYCLE.BIN/
 
 node_modules
 .DS_Store
+package-lock.json
 
 # Compiled
-build
-build/**/*
+dist
+dist/**/*
+
+# Parcel
+.cache
