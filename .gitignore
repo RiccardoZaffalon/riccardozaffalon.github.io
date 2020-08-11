@@ -32,8 +32,6 @@ node_modules
 package-lock.json
 
 # Compiled
-dist
-dist/**/*
 
 # Parcel
 .cache
