@@ -21,18 +21,6 @@
             @include large {
                 display: block;
             }
-
-            &::before {
-                content: '';
-                display: block;
-                position: absolute;
-                background: transparent;
-                border: 4px solid $text-color;
-                top: -1rem;
-                left: -1rem;
-                width: 100%;
-                height: 100%;
-            }
         }
 
         &:last-of-type {
