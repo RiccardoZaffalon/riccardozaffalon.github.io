@@ -1,0 +1,29 @@
+{
+  "name": "riccardozaffalon.github.io",
+  "version": "1.0.0",
+  "description": "This repository hosts the source files for my personal websites.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RiccardoZaffalon/riccardozaffalon.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RiccardoZaffalon/riccardozaffalon.github.io/issues"
+  },
+  "homepage": "https://github.com/RiccardoZaffalon/riccardozaffalon.github.io#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.10"
+  },
+  "dependencies": {
+    "gsap": "^3.4.2"
+  }
+}

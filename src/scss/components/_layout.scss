@@ -1,0 +1,24 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background: $background-color;
+    color: $text-color;
+}
+
+body {
+    padding-top: 2rem;
+
+    @include large {
+        padding-top: 6rem;
+    }
+}
+
+.container {
+    padding: 0 1rem;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.footer {
+    margin-top: 3 * $spacing;
+}
