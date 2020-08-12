@@ -1,5 +1,10 @@
 import Animations from './animations';
 
-window.addEventListener('load', () => {
+window.onload = () => {
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+
+    window.scrollTo(0,0);
     new Animations().init();
-});
+}

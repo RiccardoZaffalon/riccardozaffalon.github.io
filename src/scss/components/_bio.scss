@@ -31,9 +31,10 @@
                 opacity: 0;
             }
 
-            &:hover {
-                opacity: 1;
-                transition-delay: 100ms;
+            &.active {
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
     }

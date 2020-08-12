@@ -22,7 +22,7 @@ h5 {
 h1 {
     font-size: 4rem;
     font-weight: 700;
-    margin-bottom: $spacing;
+    margin-bottom: 0;
 
     @include large {
         font-size: 6rem;
@@ -53,4 +53,8 @@ strong,
 .strong {
     font-weight: 500;
     font-style: italic;
+}
+
+.intro {
+    margin-bottom: $spacing;
 }
