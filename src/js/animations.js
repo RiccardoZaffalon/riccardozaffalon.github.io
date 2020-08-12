@@ -1,13 +1,12 @@
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+// import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
+// gsap.registerPlugin(ScrollTrigger);
 
 export default class Animations {
     constructor() {
-        this.$h1 = document.getElementById('page-title');
+        this.$intro = document.querySelector('.intro');
         this.$reveals = document.querySelectorAll('[data-reveal]');
-        this.$image = document.getElementById('profile-image');
     }
 
     init() {
@@ -16,16 +15,23 @@ export default class Animations {
             ease: "power3.out"
         });
 
-        gsap.to(this.$h1.querySelectorAll('span'), {
-            display: 'block',
-            y: 0
+        gsap.to(this.$intro.querySelectorAll('span'), {
+            display: 'inline-block',
+            y: 0,
+            stagger: 0.1
         });   
 
         gsap.to(this.$reveals, {
             opacity: 1,
             x: 0,
             stagger: 0.1,
-            delay: 1
+            delay(i, target) {
+                const offset = target.dataset.revealDelay ? parseInt(target.dataset.revealDelay, 10) / 1000 : 0;
+                return offset + 1;
+            },
+            onComplete() {
+                document.getElementById('profile-image-hover').classList.add('active');
+            }
         });
     }
 }
