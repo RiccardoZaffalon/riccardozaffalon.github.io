@@ -1,5 +1,10 @@
 .bio {
     position: relative;
+    margin-bottom: $spacing;
+
+    @include large {
+        margin-bottom: 3 * $spacing;
+    }
 
     img {
         width: 100%;
