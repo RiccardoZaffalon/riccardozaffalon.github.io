@@ -3,6 +3,8 @@ body {
     font-size: 1.5rem;
     letter-spacing: 0.5px;
     line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
     @include large {
         line-height: 1.6;
@@ -51,7 +53,7 @@ p {
 }
 
 a {
-    color: $text-color;
+    color: $primary-color;
     font-weight: 500;
     font-style: italic;
 }

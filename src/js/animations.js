@@ -18,6 +18,7 @@ export default class Animations {
         gsap.to(this.$intro.querySelectorAll('span'), {
             display: 'inline-block',
             y: 0,
+            z: 0,
             stagger: 0.1
         });   
 
