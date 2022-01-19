@@ -6,11 +6,11 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap"
             rel="stylesheet"
           />
         </Head>
-        <body>
+        <body className="h-100 bg-stone-800 text-teal-300">
           <Main />
           <NextScript />
         </body>
