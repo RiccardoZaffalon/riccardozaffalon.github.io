@@ -38,3 +38,4 @@ build/**/*
 
 # Parcel
 .cache
+.parcel-cache
