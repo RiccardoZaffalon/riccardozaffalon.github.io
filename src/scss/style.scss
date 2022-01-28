@@ -1,0 +1,93 @@
+@import "reset";
+
+:root {
+  --spacer: 3em;
+  --half-spacer: 1.5rem;
+  --background: #ede8e3;
+  --foreground: #242322;
+  --accent: #19bb7e;
+  --foreground--highlight: var(--accent);
+  scroll-behavior: smooth;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #242322;
+    --foreground: #ede8e3;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+::-moz-selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+::selection {
+  background: var(--foreground);
+  color: var(--background);
+}
+
+h2,
+p {
+  margin-bottom: var(--spacer);
+}
+
+footer {
+  margin-bottom: var(--spacer);
+  padding-top: var(--half-spacer);
+}
+
+h1 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 3em;
+  margin-bottom: 6em;
+}
+
+a {
+  color: var(--foreground);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--foreground--highlight);
+  }
+
+  &:focus,
+  &:active {
+    outline: 1px dotted var(--accent);
+  }
+
+  p &,
+  &:not([href="/"]) {
+    text-decoration: underline;
+    font-size: 0.9375em;
+  }
+}
+
+section {
+  padding: 0 1em;
+  max-width: 42em;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 992px) {
+  :root {
+    --spacer: 6em;
+    --half-spacer: 3rem;
+  }
+
+  h1 {
+    margin-top: 6em;
+    margin-bottom: 12em;
+  }
+}
