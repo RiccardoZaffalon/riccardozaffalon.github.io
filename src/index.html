@@ -21,236 +21,8 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    <style>
-        /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-        html,
-        body,
-        div,
-        span,
-        applet,
-        object,
-        iframe,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        blockquote,
-        pre,
-        a,
-        abbr,
-        acronym,
-        address,
-        big,
-        cite,
-        code,
-        del,
-        dfn,
-        em,
-        img,
-        ins,
-        kbd,
-        q,
-        s,
-        samp,
-        small,
-        strike,
-        strong,
-        sub,
-        sup,
-        tt,
-        var,
-        b,
-        u,
-        i,
-        center,
-        dl,
-        dt,
-        dd,
-        ol,
-        ul,
-        li,
-        fieldset,
-        form,
-        label,
-        legend,
-        table,
-        caption,
-        tbody,
-        tfoot,
-        thead,
-        tr,
-        th,
-        td,
-        article,
-        aside,
-        canvas,
-        details,
-        embed,
-        figure,
-        figcaption,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        output,
-        ruby,
-        section,
-        summary,
-        time,
-        mark,
-        audio,
-        video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-        }
-
-        /* HTML5 display-role reset for older browsers */
-        article,
-        aside,
-        details,
-        figcaption,
-        figure,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        section {
-            display: block;
-        }
-
-        body {
-            line-height: 1;
-        }
-
-        ol,
-        ul {
-            list-style: none;
-        }
-
-        blockquote,
-        q {
-            quotes: none;
-        }
-
-        blockquote:before,
-        blockquote:after,
-        q:before,
-        q:after {
-            content: '';
-            content: none;
-        }
-
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-
-        /* Custom */
-        :root {
-            --spacer: 3em;
-            --half-spacer: 1.5rem;
-            --background: #ede8e3;
-            --foreground: #242322;
-            --accent: #19bb7e;
-            --foreground--highlight: var(--accent);
-            scroll-behavior: smooth;
-        }
-
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --background: #242322;
-                --foreground: #ede8e3;
-            }
-        }
-
-        body {
-            background-color: var(--background);
-            color: var(--foreground);
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            line-height: 1.6;
-            font-weight: 300;
-        }
-
-        ::-moz-selection {
-            background: var(--foreground);
-            color: var(--background);
-        }
-
-        ::selection {
-            background: var(--foreground);
-            color: var(--background);
-        }
-
-        h2,
-        p {
-            margin-bottom: var(--spacer);
-        }
-
-        footer {
-            margin-bottom: var(--spacer);
-            padding-top: var(--half-spacer);
-        }
-
-        h1 {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            margin-top: 3em;
-            margin-bottom: 6em;
-        }
-
-        a {
-            color: var(--foreground);
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: var(--foreground--highlight);
-        }
-
-        a:focus,
-        a:active {
-            outline: 1px dotted var(--accent);
-        }
-
-        p a,
-        a:not([href="/"]) {
-            text-decoration: underline;
-            font-size: 0.9375em;
-        }
-
-        section {
-            padding: 0 1em;
-            max-width: 42em;
-            margin: 0 auto;
-        }
-
-        @media screen and (min-width: 992px) {
-            :root {
-                --spacer: 6em;
-                --half-spacer: 3rem;
-            }
-
-            h1 {
-                margin-top: 6em;
-                margin-bottom: 12em;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.scss">
 </head>
 
 <body>
@@ -292,14 +64,14 @@
             freelancer for clients in Italy and Canada, providing digital solutions for small
             business owners and professionals.
         </p>
-        <p>
+        <!-- <p>
             Before that, I paid my dues interning at a few web agencies, notably at <a href="//www.webtechnet.it"
                 target="_blank">webtechnet</a> where I started bringing
             modern technologies into some of their older projects in 2015.
-        </p>
+        </p> -->
 
         <p>I am proficient in HTML, CSS, and their most popular preprocessors (<em>e.g.
-                Pug, SCSS</em>), JavaScript (<em>including ES6 and ESNext</em>),
+                Pug, SCSS</em>), JavaScript (<em>including ES6 and beyond</em>),
             Salesforce Commerce Cloud (<em>Certified B2C Commerce Developer</em>), and git.
         </p>
         <p>I am experienced in React, webpack, and Gulp, as well as design tools such
@@ -307,9 +79,10 @@
             Next.js and styled-components.
         </p>
 
-        <footer id="contacts">
+        <footer>
             If you want to know more, or just say “Hi”, you are welcome to get in touch anytime at <a
-                href="mailto:riccardo.zaffalon@gmail.com" target="_blank">riccardo.zaffalon@gmail.com</a> or find me on
+                href="mailto:riccardo.zaffalon@gmail.com" id="contacts" target="_blank">riccardo.zaffalon@gmail.com</a>
+            or find me on
             <a href="//twitter.com/rzaffa" target="_blank">Twitter</a>, <a href="//www.linkedin.com/in/riccardozaffalon"
                 target="_blank">LinkedIn</a>, and <a href="//github.com/RiccardoZaffalon" target="_blank">GitHub</a>.
         </footer>
