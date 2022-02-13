@@ -1,21 +1,22 @@
 @import "reset";
 
 :root {
-  --spacer: 3em;
-  --half-spacer: 1.5rem;
-  --background: #ede8e3;
-  --foreground: #242322;
-  --accent: #19bb7e;
+  --spacer: 2em;
+  --half-spacer: 1rem;
+  --background: #1a1830;
+  --foreground: #f5e8db;
+  --accent: #1ff360;
   --foreground--highlight: var(--accent);
   scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #242322;
-    --foreground: #ede8e3;
-  }
-}
+// @media (prefers-color-scheme: light) {
+//   :root {
+//     --background: #ede8e3;
+//     --foreground: #242322;
+//     --accent: #19bb7e;
+//   }
+// }
 
 body {
   background-color: var(--background);
@@ -23,17 +24,30 @@ body {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1.5em;
 }
 
 ::-moz-selection {
-  background: var(--foreground);
+  background: var(--accent);
   color: var(--background);
 }
 
 ::selection {
-  background: var(--foreground);
+  background: var(--accent);
   color: var(--background);
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+}
+
+h2 {
+  a {
+    display: block;
+  }
 }
 
 h2,
@@ -46,16 +60,8 @@ footer {
   padding-top: var(--half-spacer);
 }
 
-h1 {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.03em;
-  margin-top: 3em;
-  margin-bottom: 6em;
-}
-
 a {
-  color: var(--foreground);
+  color: var(--foreground--highlight);
   text-decoration: none;
 
   &:hover {
@@ -69,8 +75,11 @@ a {
 
   p &,
   &:not([href="/"]) {
-    text-decoration: underline;
     font-size: 0.9375em;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -82,12 +91,22 @@ section {
 
 @media screen and (min-width: 992px) {
   :root {
-    --spacer: 6em;
-    --half-spacer: 3rem;
+    --spacer: 3em;
+    --half-spacer: 1.5rem;
+  }
+
+  body {
+    font-size: 2em;
   }
 
   h1 {
-    margin-top: 6em;
-    margin-bottom: 12em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+
+  h2 {
+    a {
+      display: inline;
+    }
   }
 }
