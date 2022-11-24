@@ -1,11 +1,11 @@
 @import "reset";
 
 :root {
-  --spacer: 2em;
-  --half-spacer: 1rem;
-  --background: #1a1830;
-  --foreground: #f5e8db;
-  --accent: #1ff360;
+  --spacer: 3em;
+  --half-spacer: 1.5rem;
+  --background: #e1dfdc;
+  --foreground: #171717;
+  --accent: #274bd9;
   --foreground--highlight: var(--accent);
   scroll-behavior: smooth;
 }
@@ -25,7 +25,7 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   line-height: 1.6;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.05em;
 }
 
 ::-moz-selection {
@@ -91,17 +91,13 @@ section {
 
 @media screen and (min-width: 992px) {
   :root {
-    --spacer: 3em;
-    --half-spacer: 1.5rem;
-  }
-
-  body {
-    font-size: 2em;
+    --spacer: 4em;
+    --half-spacer: 2rem;
   }
 
   h1 {
-    margin-top: 2em;
-    margin-bottom: 3em;
+    margin-top: var(--spacer);
+    margin-bottom: var(--half-spacer);
   }
 
   h2 {
