@@ -1,22 +1,31 @@
 @import "reset";
 
+@mixin theme($mode) {
+  @if ($mode == dark) {
+    --background: #0e0e0e;
+    --foreground: #f4f4f4;
+    --accent: #6183ff;
+  } @else {
+    --background: #f4f4f4;
+    --foreground: #0e0e0e;
+    --accent: #0c40fd;
+  }
+}
+
 :root {
+  @include theme(light);
+
   --spacer: 3em;
   --half-spacer: 1.5rem;
-  --background: #f4f4f4;
-  --foreground: #0e0e0e;
-  --accent: #0c40fd;
   --foreground--highlight: var(--accent);
   scroll-behavior: smooth;
 }
 
-// @media (prefers-color-scheme: light) {
-//   :root {
-//     --background: #ede8e3;
-//     --foreground: #242322;
-//     --accent: #19bb7e;
-//   }
-// }
+@media (prefers-color-scheme: dark) {
+  :root {
+    @include theme(dark);
+  }
+}
 
 body {
   background-color: var(--background);
@@ -89,7 +98,7 @@ section {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) {
   :root {
     --spacer: 4em;
     --half-spacer: 2rem;
