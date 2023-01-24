@@ -2,13 +2,15 @@
 
 @mixin theme($mode) {
   @if ($mode == dark) {
-    --background: #0e0e0e;
-    --foreground: #f4f4f4;
-    --accent: #6183ff;
+    --background: #030303;
+    --foreground: #ffffff;
+    --foreground-dim: #c7c7c7;
+    --accent: #f46252;
   } @else {
-    --background: #f4f4f4;
+    --background: #ffffff;
     --foreground: #0e0e0e;
-    --accent: #0c40fd;
+    --foreground-dim: #343434;
+    --accent: #fd230c;
   }
 }
 
@@ -29,9 +31,8 @@
 
 body {
   background-color: var(--background);
-  color: var(--foreground);
-  font-family: "IBM Plex Mono", Menlo, Consolas, Monaco, Liberation Mono,
-    Lucida Console, monospace;
+  color: var(--foreground-dim);
+  font-family: "Inter", sans-serif;
   line-height: 1.6;
   font-weight: 400;
   font-size: 1.05em;
@@ -47,10 +48,16 @@ body {
   color: var(--background);
 }
 
+strong {
+  font-weight: 600;
+}
+
 h1 {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-top: 1em;
   margin-bottom: 2em;
+  font-weight: 700;
+  color: var(--foreground);
 }
 
 h2 {
@@ -85,10 +92,7 @@ a {
   p &,
   &:not([href="/"]) {
     font-size: 0.9375em;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    text-decoration: underline;
   }
 }
 
