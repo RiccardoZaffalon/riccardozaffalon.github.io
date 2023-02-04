@@ -12,12 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Install and build
-        uses: actions/setup-node@master
+      - uses: actions/setup-node@master
         with:
           node-version: 16
-        run: |
-          npm ci
-          npm run build
+      - run: npm ci
+      - run: npm run build
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
