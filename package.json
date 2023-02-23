@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "This repository hosts the source files for my personal websites.",
   "scripts": {
-    "test": "parcel build src/index.html",
-    "build": "parcel build src/index.html",
-    "dev": "parcel src/index.html --open"
+    "test": "vite build",
+    "build": "vite build",
+    "dev": "vite --open",
+    "start": "npm run dev"
   },
   "author": "Riccardo Zaffalon",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.2.1",
-    "parcel": "^2.2.1"
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.4"
   }
 }
