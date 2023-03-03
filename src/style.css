@@ -9,11 +9,21 @@
     }
 
     p {
-        @apply mb-8 lg:mb-16;
+        @apply mb-8 lg:mb-16 leading-relaxed;
     }
 
     p a {
         @apply underline;
         @apply text-amber-400;
+    }
+
+    canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        pointer-events: none;
     }
 }

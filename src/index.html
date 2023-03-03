@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="bg-neutral-900 scroll-smooth">
+<html lang="en" class="bg-black scroll-smooth">
 
 <head>
     <script>
-        window.addEventListener("load", (event) => {
-            document.body.classList.add('opacity-100');
-            document.body.classList.remove('opacity-0');
+        window.addEventListener("load", function () {
+            document.body.style.opacity = 1;
         });
     </script>
     <script async defer data-website-id="20049794-062f-44d4-af44-b49362fe65fb"
@@ -16,7 +15,7 @@
     <title>Riccardo Zaffalon — Frontend web developer</title>
     <meta name="description"
         content="Riccardo Zaffalon, frontend web developer specialized in building fast and enjoyable web experiences, using modern web technologies and user-centered design">
-    <meta name="theme-color" content="#EDE8E3">
+    <meta name="theme-color" content="#1c1423">
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +23,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="font-sans bg-neutral-900 text-neutral-100 cursor-default opacity-0 transition-opacity duration-1000">
+<body class="font-sans text-neutral-100 cursor-default transition-opacity duration-1000" style="opacity: 0;">
+    <canvas aria-hidden="true" id="canvas" class="bg-gradient-to-br from-[#1c1423] to-transparent"></canvas>
     <main class="mx-auto px-8 max-w-5xl">
         <header class="mt-16 lg:mt-32">
             <a href="/">
@@ -34,20 +34,20 @@
             </a>
         </header>
 
-        <section class="mt-8">
-            <h2 class="text-neutral-300 text-2xl lg:text-4xl font-semibold">A frontend developer working in
+        <section class="mt-8 text-opacity-80 text-neutral-50 text-2xl lg:text-4xl font-semibold">
+            <h2 class="">A frontend developer working in
                 Venice,&nbsp;Italy <br>
                 –
-                with 6+ years
+                with 7+ years
                 experience.
             </h2>
 
-            <h2 class="text-neutral-300 text-2xl lg:text-4xl font-semibold mt-4">
+            <h2 class="mt-4">
                 I specialize in building fast, reliable, and human-centered web interfaces.
             </h2>
         </section>
 
-        <section class="mt-16 lg:mt-32 text-lg lg:text-xl">
+        <section class="text-neutral-100 text-opacity-90 mt-16 lg:mt-32 text-lg lg:text-xl">
             <p>
                 Since the beginning of <strong>2018</strong>, I have been at <a href="//www.alpenite.com"
                     target="_blank">alpenite</a>, where I work as a

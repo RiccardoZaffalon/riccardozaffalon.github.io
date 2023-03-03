@@ -5,7 +5,7 @@
   "scripts": {
     "test": "vite build",
     "build": "vite build",
-    "dev": "vite --open",
+    "dev": "vite --port 5174",
     "start": "npm run dev"
   },
   "author": "Riccardo Zaffalon",
