@@ -1,0 +1,62 @@
+@use "colors";
+@import "reset";
+
+body {
+  background-color: colors.$background;
+  color: colors.$foreground;
+  font-size: 18px;
+  line-height: 1.8;
+  letter-spacing: 0.01em;
+  font-family: "Inter", Helvetica, sans-serif;
+  cursor: default;
+  user-select: none;
+}
+
+a {
+  color: colors.$accent;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 1em;
+}
+
+strong {
+  font-weight: 500;
+}
+
+header {
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+main {
+  padding: 1em;
+  max-width: 40em;
+  margin: 3em auto;
+}
+
+.copy {
+  margin: 4em 0;
+}
+
+footer {
+  cursor: text;
+  user-select: text;
+}
