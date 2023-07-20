@@ -1,0 +1,67 @@
+---
+import "../styles/main.scss";
+import Bio from "../content/bio.md";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.style.opacity = 1;
+      });
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Riccardo Zaffalon — Frontend web developer</title>
+    <meta
+      name="description"
+      content="Riccardo Zaffalon, frontend web developer from Venice, Italy specialized in building fast and enjoyable web experiences, using modern web technologies and user-centered design"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body style="opacity:0">
+    <main>
+      <header>
+        <h1>Hi, I'm <a href="/">Riccardo Zaffalon</a>,</h1>
+
+        <h2>a frontend developer with 7+ years experience</h2>
+
+        <h3>
+          Specialized in building fast, reliable, and human-centered web
+          interfaces, I value simplicity and inclusivity.
+        </h3>
+      </header>
+
+      <section class="copy">
+        <Bio />
+      </section>
+
+      <footer>
+        <p>
+          If you want to know more, or just say “Hi”, you are welcome to get in
+          touch anytime at <a
+            href="mailto:riccardo.zaffalon@gmail.com"
+            id="contacts"
+            target="_blank">riccardo.zaffalon@gmail.com</a
+          >
+          or find me on
+          <a href="//twitter.com/rzaffa" target="_blank">Twitter</a>, <a
+            href="//www.linkedin.com/in/riccardozaffalon"
+            target="_blank">LinkedIn</a
+          >, and <a href="//github.com/RiccardoZaffalon" target="_blank"
+            >GitHub</a
+          >.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
