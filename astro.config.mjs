@@ -4,8 +4,7 @@ import rehypeExternalLinks from "rehype-external-links";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://riccardozaffalon.com/",
-  base: "/riccardozaffalon.github.io",
+  site: "https://riccardozaffalon.com",
   integrations: [
     compress({
       css: false,
