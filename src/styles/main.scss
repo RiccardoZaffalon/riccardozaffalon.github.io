@@ -1,19 +1,37 @@
-@use "colors";
 @import "reset";
 
+:root {
+  --color-light: #ffffff;
+  --color-dark: rgb(64, 64, 64);
+
+  --color-background: var(--color-light);
+  --color-foreground: var(--color-dark);
+  --color-accent: rgb(15, 64, 197);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #111111;
+    --color-foreground: rgb(172, 172, 172);
+    --color-accent: rgb(50, 98, 230);
+  }
+}
+
 body {
-  background-color: colors.$background;
-  color: colors.$foreground;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
   font-size: 18px;
   line-height: 1.8;
   letter-spacing: 0.01em;
-  font-family: "Inter", Helvetica, sans-serif;
+  font-family: "Inconsolata", monospace;
+  font-weight: 300;
   cursor: default;
   user-select: none;
 }
 
 a {
-  color: colors.$accent;
+  color: var(--color-accent);
+  font-weight: 500;
 }
 
 h1 {
@@ -30,13 +48,17 @@ h3 {
 
 h2,
 h3,
-h4,
-p {
+h4 {
   margin-bottom: 1em;
 }
 
 strong {
   font-weight: 500;
+}
+
+input,
+button {
+  font-family: inherit;
 }
 
 header {
@@ -47,13 +69,17 @@ header {
 }
 
 main {
-  padding: 1em;
+  padding: 4em;
   max-width: 40em;
-  margin: 3em auto;
+  margin: 0 auto;
 }
 
 .copy {
   margin: 4em 0;
+
+  p {
+    margin-bottom: 2em;
+  }
 }
 
 footer {
