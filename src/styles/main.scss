@@ -1,11 +1,11 @@
 @import "reset";
 
-:root {
-  --color-light: #ffffff;
-  --color-dark: rgb(64, 64, 64);
+$breakpoint: 768px;
 
-  --color-background: var(--color-light);
-  --color-foreground: var(--color-dark);
+:root {
+  --color-background: #ffffff;
+  --color-foreground: rgb(64, 64, 64);
+  --color-foreground-dimmed: rgb(157, 157, 157);
   --color-accent: rgb(15, 64, 197);
 }
 
@@ -13,6 +13,7 @@
   :root {
     --color-background: #111111;
     --color-foreground: rgb(172, 172, 172);
+    --color-foreground-dimmed: rgb(106, 106, 106);
     --color-accent: rgb(50, 98, 230);
   }
 }
@@ -72,6 +73,11 @@ main {
   padding: 4em;
   max-width: 40em;
   margin: 0 auto;
+
+  // tablet media query has smaller lateral padding
+  @media (max-width: $breakpoint) {
+    padding: 4em 1em;
+  }
 }
 
 .copy {
@@ -85,4 +91,15 @@ main {
 footer {
   cursor: text;
   user-select: text;
+
+  p {
+    small {
+      display: block;
+      font-size: 0.75em;
+      margin-top: 5em;
+      padding: 0 2em;
+      text-align: center;
+      color: var(--color-foreground-dimmed);
+    }
+  }
 }
