@@ -2,49 +2,74 @@
 
 $breakpoint: 768px;
 
+@mixin large {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
+
 :root {
-  --color-background: #ffffff;
-  --color-foreground: rgb(64, 64, 64);
-  --color-foreground-dimmed: rgb(157, 157, 157);
-  --color-accent: rgb(15, 64, 197);
+  --color-background: #f6f1ea;
+  --color-foreground: rgb(41, 39, 37);
+  --color-foreground-dimmed: rgb(150, 139, 131);
+  --color-accent: rgb(19, 106, 167);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-background: #111111;
-    --color-foreground: rgb(172, 172, 172);
-    --color-foreground-dimmed: rgb(106, 106, 106);
-    --color-accent: rgb(50, 98, 230);
+    --color-background: #272625;
+    --color-foreground: rgb(233, 229, 225);
+    --color-foreground-dimmed: rgb(148, 148, 148);
+    --color-accent: rgb(230, 194, 50);
   }
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-background);
 }
 
 body {
   background-color: var(--color-background);
   color: var(--color-foreground);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
-  letter-spacing: 0.01em;
-  font-family: "Inconsolata", monospace;
+  font-family: "Manrope", sans-serif;
   font-weight: 300;
   cursor: default;
-  user-select: none;
+
+  @include large {
+    font-size: 18px;
+  }
 }
 
 a {
   color: var(--color-accent);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
+
+  @include large {
+    font-size: 2rem;
+  }
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.35rem;
+
+  @include large {
+    font-size: 1.5rem;
+  }
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
+
+  @include large {
+    font-size: 1.25rem;
+  }
 }
 
 h2,
@@ -54,7 +79,7 @@ h4 {
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 input,
@@ -70,13 +95,12 @@ header {
 }
 
 main {
-  padding: 4em;
   max-width: 40em;
   margin: 0 auto;
+  padding: 4em 1em;
 
-  // tablet media query has smaller lateral padding
-  @media (max-width: $breakpoint) {
-    padding: 4em 1em;
+  @include large {
+    padding: 4em;
   }
 }
 
@@ -89,14 +113,12 @@ main {
 }
 
 footer {
-  cursor: text;
-  user-select: text;
-
   p {
     small {
       display: block;
       font-size: 0.75em;
-      margin-top: 5em;
+      line-height: 1.3;
+      margin-top: 8em;
       padding: 0 2em;
       text-align: center;
       color: var(--color-foreground-dimmed);
