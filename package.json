@@ -23,7 +23,6 @@
   "homepage": "https://github.com/RiccardoZaffalon/riccardozaffalon.github.io#readme",
   "dependencies": {
     "astro": "^2.8.0",
-    "astro-compress": "^1.1.49",
     "rehype-external-links": "^2.1.0",
     "sass": "^1.63.6"
   }
