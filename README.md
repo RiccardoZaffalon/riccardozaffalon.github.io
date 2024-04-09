@@ -2,4 +2,4 @@
 
 This repository hosts the source files for my personal websites, currently built with SvelteKit.
 
-[View the live site](https://riccardozaffalon.com)
+[View the live site](https://riccardozaffalon.com), hosted on Cloudflare Pages.
