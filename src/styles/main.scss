@@ -29,16 +29,32 @@ $breakpoint: 768px;
 	color: var(--color-background);
 }
 
+@font-face {
+	font-family: 'Inter-fb-hv';
+	size-adjust: 103%;
+	ascent-override: 86%;
+	src: local('Helvetica');
+}
+
+@font-face {
+	font-family: 'Inter-fb-ar';
+	size-adjust: 103%;
+	ascent-override: 86%;
+	src: local('Arial');
+}
+
 body {
 	background-color: var(--color-background);
 	color: var(--color-foreground);
 	font-size: 16px;
 	line-height: 1.8;
-	font-family: 'Manrope', sans-serif;
+	font-family: 'Inter', 'Inter-fb-hv', 'Inter-fb-ar', sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
 	font-weight: 400;
-	cursor: default;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	cursor: default;
 
 	@include large {
 		font-size: 20px;
