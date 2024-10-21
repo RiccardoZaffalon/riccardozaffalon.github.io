@@ -12,7 +12,12 @@ $breakpoint: 768px;
 	--color-background: #ffffff;
 	--color-foreground: rgb(12, 12, 12);
 	--color-foreground-dimmed: rgb(122, 122, 122);
-	--color-accent: rgb(255, 34, 0);
+	--color-accent: rgb(22, 46, 227);
+	font-size: 125%;
+
+	@include large {
+		// font-size: 150%;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,35 +35,22 @@ $breakpoint: 768px;
 }
 
 @font-face {
-	font-family: 'Inter-fb-hv';
-	size-adjust: 103%;
-	ascent-override: 86%;
-	src: local('Helvetica');
-}
-
-@font-face {
-	font-family: 'Inter-fb-ar';
-	size-adjust: 103%;
-	ascent-override: 86%;
-	src: local('Arial');
+	font-family: 'serif-fallback';
+	size-adjust: 88%;
+	src: local('Georgia');
 }
 
 body {
 	background-color: var(--color-background);
 	color: var(--color-foreground);
-	font-size: 16px;
 	line-height: 1.8;
-	font-family: 'Inter', 'Inter-fb-hv', 'Inter-fb-ar', sans-serif;
+	font-family: 'EB Garamond', 'serif-fallback', serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	cursor: default;
-
-	@include large {
-		font-size: 20px;
-	}
 }
 
 a {
