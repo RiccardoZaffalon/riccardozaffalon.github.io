@@ -66,6 +66,12 @@ h1 {
 	}
 }
 
+h2,
+h3,
+h4 {
+	margin-bottom: 1em;
+}
+
 h2 {
 	font-size: 1.35rem;
 
@@ -82,10 +88,9 @@ h3 {
 	}
 }
 
-h2,
-h3,
 h4 {
-	margin-bottom: 1em;
+	font-weight: 600;
+	margin-bottom: 0.5em;
 }
 
 strong {
@@ -94,6 +99,24 @@ strong {
 
 em {
 	font-size: 0.888888em;
+}
+
+hr {
+	border: none;
+	border-bottom: 1px dashed var(--color-foreground-dimmed);
+	opacity: 0.15;
+	pointer-events: none;
+	user-select: none;
+	margin: 2em;
+
+	@include large {
+		margin: 4em;
+	}
+}
+
+ul {
+	margin-bottom: 1.5rem;
+	list-style-position: inside;
 }
 
 input,
