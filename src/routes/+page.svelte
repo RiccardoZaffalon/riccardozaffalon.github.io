@@ -1,4 +1,6 @@
 <script>
+	import Book from './components/Book.svelte';
+
 	export let data;
 </script>
 
@@ -10,12 +12,30 @@
 	/>
 </svelte:head>
 
-<header>{@html data.header}</header>
+<header>
+	{@html data.header}
+</header>
 
 <section class="copy">
 	{@html data.body}
 	<hr />
 	{@html data.skills}
+	<hr />
+
+	<h3>Bookshelves</h3>
+	<h4>Currently I'm reading</h4>
+	<div class="shelf">
+		{#each data.books.current as book}
+			<Book {book} />
+		{/each}
+	</div>
+
+	<h4>Lately I enjoyed</h4>
+	<div class="shelf">
+		{#each data.books.lately as book}
+			<Book {book} />
+		{/each}
+	</div>
 </section>
 
 <footer>
