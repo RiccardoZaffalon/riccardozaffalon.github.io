@@ -1,19 +1,18 @@
-import { content, md } from '$lib';
+import { createDirectus, rest, staticToken, readItem } from '@directus/sdk';
+import { DIRECTUS_URL, DIRECTUS_STATIC_TOKEN } from '$env/static/private';
 
 export const prerender = true;
 export const trailingSlash = 'always';
 
-export async function load(event) {
-    const lang = event?.url?.pathname?.startsWith('/it') ? 'it' : 'en';
-
-    const intro = await content('intro', lang);
-    const bio = await content('bio', lang);
-    const footer = await content('footer', lang);
+export async function load({ fetch }) {
+    const options = fetch ? { globals: { fetch } } : {};
+    const directus = createDirectus(DIRECTUS_URL, options).with(staticToken(DIRECTUS_STATIC_TOKEN)).with(rest());
+    const result = await directus.request(readItem('pages', 'home'));
 
     return {
-        lang,
-        intro: md(intro),
-        bio: md(bio),
-        footer: md(footer),
+        header: result.header,
+        body: result.body,
+        skills: result.skills,
+        footer: result.footer,
     }
 }

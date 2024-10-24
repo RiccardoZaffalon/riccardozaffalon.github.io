@@ -1,1 +1,0 @@
-Se vuoi saperne di più, o semplicemente dirmi "Ciao", puoi metterti in contatto con me in qualsiasi momento all'indirizzo [riccardo.zaffalon@gmail.com](mailto:riccardo.zaffalon@gmail.com), o puoi trovarmi su [Twitter](//twitter.com/rzaffa), [LinkedIn](//www.linkedin.com/in/riccardozaffalon), e [GitHub](//github.com/RiccardoZaffalon).

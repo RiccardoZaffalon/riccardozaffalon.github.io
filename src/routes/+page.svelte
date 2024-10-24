@@ -1,5 +1,4 @@
 <script>
-	import Main from './Main.svelte';
 	export let data;
 </script>
 
@@ -11,11 +10,14 @@
 	/>
 </svelte:head>
 
-<Main {data}>
-	<p slot="privacy">
-		<small
-			>I’m committed to transparency and compliance with European Union's legislation regarding
-			privacy; this website does not collect or set any cookie.</small
-		>
-	</p>
-</Main>
+<header>{@html data.header}</header>
+
+<section class="copy">
+	{@html data.body}
+	<hr />
+	{@html data.skills}
+</section>
+
+<footer>
+	{@html data.footer}
+</footer>

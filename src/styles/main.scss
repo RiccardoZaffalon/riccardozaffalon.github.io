@@ -13,10 +13,11 @@ $breakpoint: 768px;
 	--color-foreground: rgb(12, 12, 12);
 	--color-foreground-dimmed: rgb(122, 122, 122);
 	--color-accent: rgb(22, 46, 227);
+
 	font-size: 125%;
 
 	@include large {
-		// font-size: 150%;
+		font-size: 150%;
 	}
 }
 
@@ -34,17 +35,11 @@ $breakpoint: 768px;
 	color: var(--color-background);
 }
 
-@font-face {
-	font-family: 'serif-fallback';
-	size-adjust: 88%;
-	src: local('Georgia');
-}
-
 body {
 	background-color: var(--color-background);
 	color: var(--color-foreground);
 	line-height: 1.8;
-	font-family: 'EB Garamond', 'serif-fallback', serif;
+	font-family: 'Atkinson Hyperlegible', 'Inter', 'Helvetica', sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-weight: 400;
@@ -60,6 +55,7 @@ a {
 
 h1 {
 	font-size: 1.6rem;
+	line-height: 1;
 
 	@include large {
 		font-size: 2rem;
@@ -89,7 +85,7 @@ h3 {
 }
 
 h4 {
-	font-weight: 600;
+	font-weight: 700;
 	margin-bottom: 0.5em;
 }
 
@@ -110,7 +106,7 @@ hr {
 	margin: 2em;
 
 	@include large {
-		margin: 4em;
+		margin: 3em;
 	}
 }
 
