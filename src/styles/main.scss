@@ -13,6 +13,7 @@ $breakpoint: 768px;
 	--color-foreground: rgb(12, 12, 12);
 	--color-foreground-dimmed: rgb(122, 122, 122);
 	--color-accent: rgb(22, 46, 227);
+
 	font-size: 125%;
 
 	@include large {
@@ -34,17 +35,11 @@ $breakpoint: 768px;
 	color: var(--color-background);
 }
 
-@font-face {
-	font-family: 'serif-fallback';
-	size-adjust: 88%;
-	src: local('Georgia');
-}
-
 body {
 	background-color: var(--color-background);
 	color: var(--color-foreground);
 	line-height: 1.8;
-	font-family: 'EB Garamond', 'serif-fallback', serif;
+	font-family: 'Atkinson Hyperlegible', 'Inter', 'Helvetica', sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-weight: 400;
@@ -60,6 +55,7 @@ a {
 
 h1 {
 	font-size: 1.6rem;
+	line-height: 1;
 
 	@include large {
 		font-size: 2rem;
@@ -89,7 +85,7 @@ h3 {
 }
 
 h4 {
-	font-weight: 600;
+	font-weight: 700;
 	margin-bottom: 0.5em;
 }
 
@@ -104,13 +100,13 @@ em {
 hr {
 	border: none;
 	border-bottom: 1px dashed var(--color-foreground-dimmed);
-	opacity: 0.15;
+	opacity: 0.25;
 	pointer-events: none;
 	user-select: none;
 	margin: 2em;
 
 	@include large {
-		margin: 4em;
+		margin: 3em;
 	}
 }
 
@@ -127,22 +123,7 @@ button {
 header {
 	a {
 		text-decoration: none;
-		color: inherit;
-	}
-}
-
-.lang {
-	display: flex;
-	margin: -2em 0 2em;
-	justify-content: flex-end;
-	align-items: center;
-	font-size: 0.875rem;
-	color: inherit;
-
-	svg {
-		display: block;
-		width: 1rem;
-		margin-right: 0.5em;
+		// color: inherit;
 	}
 }
 
@@ -152,7 +133,7 @@ main {
 	padding: 4em 1em;
 
 	@include large {
-		padding: 4em;
+		padding: 8em 4em;
 	}
 }
 
@@ -164,13 +145,57 @@ main {
 	}
 }
 
+.shelf {
+	display: grid;
+	column-gap: 1em;
+	margin-bottom: 1em;
+	grid-template-columns: repeat(2, 1fr);
+
+	@include large {
+		grid-template-columns: repeat(4, 1fr);
+		margin-bottom: 2em;
+	}
+}
+
+.book {
+	margin-bottom: 1em;
+
+	&__cover {
+		display: block;
+		width: 100%;
+		aspect-ratio: 2 / 3;
+		object-fit: cover;
+		border-radius: 0 0.5rem 0.5rem 0;
+		margin-bottom: 0.5rem;
+	}
+
+	&__title,
+	&__subtitle,
+	&__author {
+		line-height: 1.1;
+	}
+
+	&__subtitle {
+		font-size: 0.75rem;
+		color: var(--color-foreground-dimmed);
+	}
+
+	&__author {
+		font-size: 0.85rem;
+		margin-top: 1em;
+	}
+}
+
 footer {
 	p {
+		&:last-child {
+			margin-top: 8em;
+		}
+
 		small {
 			display: block;
 			font-size: 0.75em;
 			line-height: 1.3;
-			margin-top: 8em;
 			padding: 0 2em;
 			text-align: center;
 			color: var(--color-foreground-dimmed);
