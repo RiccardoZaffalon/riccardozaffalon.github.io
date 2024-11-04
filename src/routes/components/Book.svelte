@@ -4,6 +4,7 @@
 
 <div class="book">
 	<img
+		loading="lazy"
 		class="book__cover"
 		src="//admin.riccardozaffalon.com/assets/{book.cover}"
 		alt={book.title}
