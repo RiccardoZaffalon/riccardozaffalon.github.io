@@ -16,8 +16,8 @@ export async function load({ fetch }) {
         body: home.body,
         skills: home.skills,
         books: {
-            current: books.filter((book) => book.shelf === 'current'),
-            lately: books.filter((book) => book.shelf === 'lately'),
+            current: books.filter((book) => book.shelf === 'current' && book.status === 'published'),
+            lately: books.filter((book) => book.shelf === 'lately' && book.status === 'published'),
         },
         footer: home.footer,
     }

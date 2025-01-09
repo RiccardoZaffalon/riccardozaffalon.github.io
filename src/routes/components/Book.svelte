@@ -6,7 +6,7 @@
 	<img
 		loading="lazy"
 		class="book__cover"
-		src="//admin.riccardozaffalon.com/assets/{book.cover}"
+		src="//admin.riccardozaffalon.com/assets/{book.cover}?width=320&format=webp"
 		alt={book.title}
 	/>
 
