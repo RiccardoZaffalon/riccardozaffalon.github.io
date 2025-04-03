@@ -19,7 +19,14 @@
 <section class="copy">
 	{@html data.body}
 	<hr />
-	{@html data.skills}
+	
+	<details>
+		<summary>Skills & Technologies</summary>
+
+		<div class="skills">
+			{@html data.skills}
+		</div>
+	</details>
 	<hr />
 
 	<h3>Bookshelves</h3>

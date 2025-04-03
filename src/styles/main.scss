@@ -1,4 +1,5 @@
 @import 'reset';
+@import 'fonts';
 
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
@@ -16,12 +17,13 @@ $breakpoint-lg: 1024px;
 }
 
 :root {
-	--color-background: rgb(245, 244, 239);
-	--color-foreground: rgb(12, 12, 12);
+	--color-background: rgb(242, 242, 242);
+	--color-foreground: rgb(46, 46, 46);
 	--color-foreground-dimmed: rgb(122, 122, 122);
-	--color-accent: rgb(0, 0, 0);
+	--color-accent: rgb(14, 54, 233);
 
-	--body-font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+	--body-font-family: 'MonaspaceNeon', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+	--headings-font-family: var(--body-font-family);
 
 	// font-size: 125%;
 	font-size: 87.5%;
@@ -31,7 +33,7 @@ $breakpoint-lg: 1024px;
 	:root {
 		--color-background: #383838;
 		--color-foreground: rgb(209, 209, 209);
-		--color-accent: rgb(255, 255, 255);
+		--color-accent: rgb(82, 124, 240);
 	}
 }
 
@@ -54,20 +56,7 @@ body {
 
 a {
 	color: var(--color-accent);
-	font-weight: 700;
-}
-
-h1 {
-	font-size: 2rem;
-
-	a {
-		font-weight: normal;
-		letter-spacing: -3px;
-	}
-
-	@include medium {
-		font-size: 2.5rem;
-	}
+	font-weight: 600;
 }
 
 h1,
@@ -75,10 +64,24 @@ h2,
 h3,
 h4 {
 	margin-bottom: 1em;
+	font-family: var(--headings-font-family);
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	// color: var(--color-accent);
+}
+
+h1 {
+	font-size: 2rem;
+
+	@include medium {
+		font-size: 2.5rem;
+	}
 }
 
 h2 {
 	font-size: 1.15rem;
+	color: var(--color-foreground);
 
 	@include medium {
 		font-size: 1.25rem;
@@ -87,7 +90,7 @@ h2 {
 
 h3 {
 	font-size: 1.25rem;
-	font-weight: 700;
+	font-weight: 600;
 
 	@include medium {
 		font-size: 1.25rem;
@@ -95,12 +98,12 @@ h3 {
 }
 
 h4 {
-	font-weight: 700;
+	font-weight: 600;
 	margin-bottom: 0.5em;
 }
 
 strong {
-	font-weight: 700;
+	font-weight: 600;
 }
 
 em {
@@ -156,6 +159,10 @@ main {
 	p {
 		margin-bottom: 2em;
 	}
+}
+
+.skills {
+	padding-top: 2em;
 }
 
 .shelf {
