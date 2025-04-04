@@ -1,5 +1,5 @@
 @import 'reset';
-@import 'fonts';
+// @import 'fonts';
 
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;
@@ -17,16 +17,17 @@ $breakpoint-lg: 1024px;
 }
 
 :root {
-	--color-background: rgb(242, 242, 242);
-	--color-foreground: rgb(46, 46, 46);
-	--color-foreground-dimmed: rgb(122, 122, 122);
+	--color-background: rgb(255, 255, 255);
+	--color-foreground: rgb(15, 15, 15);
+	--color-foreground-dimmed: rgb(91, 91, 91);
 	--color-accent: rgb(14, 54, 233);
 
-	--body-font-family: 'MonaspaceNeon', Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+	--body-font-family: "Plus Jakarta Sans", sans-serif;
 	--headings-font-family: var(--body-font-family);
 
-	// font-size: 125%;
-	font-size: 87.5%;
+	font-size: 125%;
+	// font-size: 87.5%;
+	// font-size: 100%;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,7 +46,7 @@ $breakpoint-lg: 1024px;
 body {
 	background-color: var(--color-background);
 	color: var(--color-foreground);
-	line-height: 1.8;
+	line-height: 1.35;
 	font-family: var(--body-font-family);
 	font-style: normal;
 	font-weight: 400;
@@ -66,16 +67,20 @@ h4 {
 	margin-bottom: 1em;
 	font-family: var(--headings-font-family);
 	font-optical-sizing: auto;
-	font-weight: 400;
+	font-weight: 600;
 	font-style: normal;
 	// color: var(--color-accent);
 }
 
 h1 {
 	font-size: 2rem;
-
+	
 	@include medium {
 		font-size: 2.5rem;
+	}
+
+	a {
+		font-weight: 200;
 	}
 }
 
@@ -141,15 +146,11 @@ header {
 }
 
 main {
-	max-width: 80ch;
+	max-width: 70ch;
 	padding: 4em 1.5em;
 
 	@include medium {
 		padding: 8em 6em;
-	}
-
-	@include large {
-		margin-left: 5%;
 	}
 }
 

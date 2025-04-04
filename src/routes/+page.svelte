@@ -8,7 +8,7 @@
 	<title>Riccardo Zaffalon — Frontend web developer</title>
 	<meta
 		name="description"
-		content="Frontend developer with 7+ years experience specialized in building fast, reliable, and human-centered web interfaces, I value simplicity and inclusivity."
+		content="Frontend developer with 8+ years experience specialized in building fast, reliable, and human-centered web interfaces, I value simplicity and inclusivity."
 	/>
 </svelte:head>
 
