@@ -30,13 +30,13 @@ $breakpoint-lg: 1024px;
 	// font-size: 100%;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-background: #383838;
-		--color-foreground: rgb(209, 209, 209);
-		--color-accent: rgb(82, 124, 240);
-	}
-}
+// @media (prefers-color-scheme: dark) {
+// 	:root {
+// 		--color-background: #383838;
+// 		--color-foreground: rgb(209, 209, 209);
+// 		--color-accent: rgb(82, 124, 240);
+// 	}
+// }
 
 ::selection {
 	background-color: var(--color-accent);
